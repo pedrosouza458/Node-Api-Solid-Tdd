@@ -5,8 +5,8 @@ type CreateChallengeSubmssionRequest = {
     challengeId: string;
 }
 
-class CreateChallengeSubmssion {
-    execute({studentId, challengeId}: CreateChallengeSubmssionRequest){
+export class CreateChallengeSubmssion {
+    async execute({studentId, challengeId}: CreateChallengeSubmssionRequest){
       const submssion = Submission.create({
         studentId,
         challengeId
