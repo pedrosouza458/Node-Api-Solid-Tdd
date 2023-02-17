@@ -11,6 +11,7 @@ export class InMemoryStudentsRepository implements StudentsRepository {
       if(!student){
         return null;
       }
+      
       return student;
     }
 }
