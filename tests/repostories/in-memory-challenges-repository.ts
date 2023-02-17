@@ -1,7 +1,7 @@
 import { ChallengesRepository } from "../../src/application/respositories/ChallengesRepository";
 import { Challenge } from "../../src/domain/entities/challenge";
 
-export class InMemoryStudentsRepository implements ChallengesRepository {
+export class InMemoryChallengesRepository implements ChallengesRepository {
 
     public items: Challenge[] = [];
 
